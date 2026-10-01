@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tutoring | SHANE ACADEMY</title>
+<title>Tutoring | Shane Learning Centre</title>
 <link rel="stylesheet" href="style.css">
 <style>
 /* Monthly packages (kept here so it works even if style.css is cached) */
@@ -15,12 +15,18 @@
 .offer span{display:block;color:var(--muted);font-weight:bold}
 .offer strong{display:block;color:var(--navy);font-size:26px;line-height:1.3}
 .offer small{display:block;color:var(--teal);font-weight:bold;font-size:12px}
+/* Subjects */
+.subject-card{background:#fff;border:2px solid var(--mint);border-radius:24px 24px 24px 6px;padding:22px;margin-top:14px;text-align:center}
+.subject-card h3{color:var(--navy);margin-bottom:10px}
+.subject-card .all{color:var(--teal);font-weight:bold;font-size:20px}
+.subject-card ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.subject-card li{background:var(--navy);color:#fff;font-weight:bold;border-radius:40px;padding:8px 18px}
 </style>
 </head>
 <body>
 
 <header class="top-header">
-  <h1>SHANE <span>ACADEMY</span></h1>
+  <h1>SHANE LEARNING <span>CENTRE</span></h1>
   <p>Extra Class</p>
 </header>
 
@@ -28,14 +34,24 @@
 
 <nav class="main-menu"><a href="index.html" class="menu-item"><span class="menu-icon">🏠</span><span>Home</span></a><a href="past-papers.html" class="menu-item"><span class="menu-icon">📚</span><span>Past Papers</span></a><a href="digital-documents.html" class="menu-item"><span class="menu-icon">📄</span><span>Digital Documents</span></a><a href="tutoring.html" class="menu-item active"><span class="menu-icon">🎓</span><span>Tutoring</span></a></nav>
 
-<section>
-  <h2>Tutoring and Fees</h2>
-  <p>Extra class for Grade 7 to 12, and matric rewrites.</p>
-  <div class="prices">
-    <div class="price"><span>Grade R to 9</span><strong>R150</strong></div>
-    <div class="price"><span>Grade 10 to 12</span><strong>R200</strong></div>
+<section class="subjects">
+  <h2>Subjects we offer</h2>
+
+  <div class="subject-card">
+    <h3>Grade R to 9</h3>
+    <p class="all">All subjects</p>
   </div>
-  <img class="round" src="photo2.jpg" alt="Maths on a chalkboard">
+
+  <div class="subject-card">
+    <h3>Grade 10 to 12 and matric rewrites</h3>
+    <ul>
+      <li>Accounting</li>
+      <li>Economics</li>
+      <li>Mathematics</li>
+      <li>Mathematical literacy</li>
+      <li>Business studies</li>
+    </ul>
+  </div>
 </section>
 
 <section class="packages">
@@ -44,9 +60,9 @@
 
   <h3 class="mode">🏫 Face-to-face</h3>
   <h4 class="kind">Group <small>Max 15 learners</small></h4>
-  <div class="offer-grid"><div class="offer"><span>Grade R-9</span><strong>R150</strong><small>per month</small></div><div class="offer"><span>12 lessons</span><strong>R600</strong><small>per month</small></div></div>
+  <div class="offer-grid"><div class="offer"><span>8 lessons</span><strong>R500</strong><small>per month</small></div><div class="offer"><span>12 lessons</span><strong>R600</strong><small>per month</small></div></div>
   <h4 class="kind">One-on-one <small>Just you and the tutor</small></h4>
-  <div class="offer-grid"><div class="offer"><span>Grade 10-12</span><strong>R200</strong><small>per month</small></div><div class="offer"><span>12 lessons</span><strong>R650</strong><small>per month</small></div></div>
+  <div class="offer-grid"><div class="offer"><span>8 lessons</span><strong>R500</strong><small>per month</small></div><div class="offer"><span>12 lessons</span><strong>R650</strong><small>per month</small></div></div>
 
   <h3 class="mode">💻 Online</h3>
   <h4 class="kind">Group <small>Max 4 learners</small></h4>
