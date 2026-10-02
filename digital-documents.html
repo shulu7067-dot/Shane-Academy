@@ -22,7 +22,12 @@
   <p>Notes, worksheets, study guides and revision material.</p>
 </section>
 <section class="services">
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Search documents: subject, grade, topic..." aria-label="Search documents" autocomplete="off">
+    <p class="search-count" id="search-count" aria-live="polite"></p>
+  </div>
   <div class="service-card"><span class="tag">Notes</span><h3>Grade 11 Accounting: VAT</h3><p>Notes</p></div><div class="service-card"><span class="tag">Notes</span><h3>Grade 11 Accounting: Cost accounting</h3><p>Notes</p></div><div class="service-card"><span class="tag">Notes</span><h3>Grade 11 Accounting: Reconciliations</h3><p>Notes</p></div><div class="service-card"><span class="tag">Revision</span><h3>Grade 12 Business Studies: Case studies</h3><p>Revision</p></div>
+  <p class="no-results" id="no-results" hidden>Nothing found. Try a different word, like a subject or grade.</p>
   <p style="text-align:center">Sample entries. Replace them with your own documents.</p>
 </section>
 
@@ -32,5 +37,6 @@
   <div>💬 <a href="https://wa.me/27791115961">079 111 5961</a><small>WhatsApp</small></div>
 </footer>
 
+<script src="search.js"></script>
 </body>
 </html>
