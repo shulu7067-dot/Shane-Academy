@@ -28,12 +28,12 @@ a{color:inherit}
 
 .hero img {
     width: 100%;
-    height: 230px;
-    object-fit: cover;
+    height: auto;          /* show the whole banner, no cropping */
     display: block;
-    border-radius: 0;
+    border-radius: 0;      /* rectangular */
     border: 6px solid var(--mint);
-}/* MENU */
+}
+/* MENU */
 .main-menu{display:flex;justify-content:center;gap:12px;padding:20px 15px;flex-wrap:wrap}
 .menu-item{flex:1;min-width:100px;max-width:220px;text-decoration:none;background:var(--navy);color:#fff;border-radius:40px;padding:14px 10px;text-align:center;font-weight:bold;transition:.25s}
 .menu-item:hover,.menu-item.active{background:var(--teal)}
@@ -83,9 +83,9 @@ footer small{display:block;color:var(--mint)}
 
 @media (max-width:600px){
   .top-header h1{font-size:23px}
-  .hero img{height:160px}
-  .menu-item{font-size:13px;padding:10px 4px}
-  .menu-icon{font-size:22px}
+  .main-menu{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:16px 15px}
+  .menu-item{min-width:0;max-width:none;font-size:14px;line-height:1.25;padding:12px 8px;border-radius:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow-wrap:break-word}
+  .menu-icon{font-size:24px}
   section h2{font-size:22px}
   .package-grid{grid-template-columns:1fr}
 }
